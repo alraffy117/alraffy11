@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chatset="utf-8">
+    <meta name="viewport" content="width=device, initial-scaler=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>HOME</title>
+</head>
+
+<script>
+    function logout(){
+        let response = confirm("Are You Sure You Want To log out?");
+
+    if(response){
+        window.close('home.html');
+        window.opin('index.html');
+
+
+    }
+    }
+</script>
+<body>
+    <h1>WELCOME TO OUR HOMEPAGE</h1>
+
+    <button type="submit" onclick="logout()"> logout </button>
+
+    <br>
+    <br>
+        
+    <div class="div1">
+        <h1>JavaScript Variable</h1>
+
+        <p>The result of adding 7 + 9 + 5 is:</p>
+        <p id="demo1"></p>
+        <button type="submit" onclick="adding()"> Show Result </button>
+
+        <script>
+            function adding(){
+                let x = 7 + 9 + 5;
+                document.getElementById("demo1").innerHTML = x;
+
+            }
+        </script>
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <h2>Adding Two Numbers:</h2>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button type="button" onclick="addnum()">add</button>
+        <p>The sum is: </p><p id="demo2"></p>
+
+        <script>
+            function addnum(){
+                let a = parseInt(document.getElementById("num1").value);
+                let b = parseInt(document.getElementById("num2").value);
+                let x = a + b:
+                document.getElementById("result").innerHTML = x;
+                    
+            }
+        </script>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <h3>Subtracting Two Numbers:</h3>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button type="button" onclick="addnum()">add</button>
+        <p>The sum is: </p><p id="demo3"></p>
+
+        <script>
+            function addnum(){
+                let a = parseInt(document.getElementById("num1").value);
+                let b = parseInt(document.getElementById("num2").value);
+                let x = a - b:
+                document.getElementById("demo3").innerHTML = x;
+                    
+            }
+        </script>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <h4>Multiplying Two Numbers:</h4>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button type="button" onclick="addnum()">add</button>
+        <p>The sum is: </p><p id="demo4"></p>
+
+        <script>
+            function addnum(){
+                let a = parseInt(document.getElementById("num1").value);
+                let b = parseInt(document.getElementById("num2").value);
+                let x = a x b:
+                document.getElementById("demo4").innerHTML = x;
+                    
+            }
